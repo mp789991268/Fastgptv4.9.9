@@ -9,7 +9,7 @@ const projectDescription = "FastGPT 文档";
 // 文档目录，使用相对路径
 const docsDir = path.join(__dirname, './content/zh-cn/docs');
 // 基础 URL
-const baseUrl = "https://doc.fastgpt.cn/docs/";
+const baseUrl = "https://8.134.168.50:3000/docs/";
 
 // 生成 llms.txt
 let llmsTxtContent = `# ${projectName}\n${projectDescription}\n`;

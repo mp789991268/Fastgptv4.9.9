@@ -18,10 +18,10 @@ FastGPT は、LLM 上 に 構築 された 知識 ベースの Q&A システム�
   <a href="https://tryfastgpt.ai/">
     <img height="21" src="https://img.shields.io/badge/在线使用-d4eaf7?style=flat-square&logo=spoj&logoColor=7d09f1" alt="cloud">
   </a>
-  <a href="https://doc.tryfastgpt.ai/docs/intro">
+  <a href="https://8.134.168.50:3000/docs/intro">
     <img height="21" src="https://img.shields.io/badge/相关文档-7d09f1?style=flat-square" alt="document">
   </a>
-  <a href="https://doc.tryfastgpt.ai/docs/development">
+  <a href="https://8.134.168.50:3000/docs/development">
     <img height="21" src="https://img.shields.io/badge/本地开发-%23d4eaf7?style=flat-square&logo=xcode&logoColor=7d09f1" alt="development">
   </a>
   <a href="/#-%E7%9B%B8%E5%85%B3%E9%A1%B9%E7%9B%AE">
@@ -98,11 +98,11 @@ https://github.com/labring/FastGPT/assets/15308462/7d3a38df-eb0e-4388-9250-2409b
 
   デプロイ 後、データベースをセットアップするので、2~4分待 ってください。基本設定 を 使 っているので、最初 は 少 し 遅 いかもしれません。
 
-- [ローカル 開発入門](https://doc.tryfastgpt.ai/docs/development)
-- [FastGPT のデプロイ](https://doc.tryfastgpt.ai/docs/installation)
-- [システム 設定 ガイド](https://doc.tryfastgpt.ai/docs/installation/reference)
-- [複数 モデルの 設定](https://doc.tryfastgpt.ai/docs/installation/reference/models)
-- [バージョン 更新 とアップグレード](https://doc.tryfastgpt.ai/docs/installation/upgrading)
+- [ローカル 開発入門](https://8.134.168.50:3000/docs/development)
+- [FastGPT のデプロイ](https://8.134.168.50:3000/docs/installation)
+- [システム 設定 ガイド](https://8.134.168.50:3000/docs/installation/reference)
+- [複数 モデルの 設定](https://8.134.168.50:3000/docs/installation/reference/models)
+- [バージョン 更新 とアップグレード](https://8.134.168.50:3000/docs/installation/upgrading)
 
 <!-- ## :point_right: ロードマップ
 - [FastGPT ロードマップ](https://kjqvjse66l.feishu.cn/docx/RVUxdqE2WolDYyxEKATcM0XXnte) -->

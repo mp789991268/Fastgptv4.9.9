@@ -1,4 +1,4 @@
-# --------- install dependence -----------
+# --------- 安装依赖 -----------
 FROM node:20.14.0-alpine AS maindeps
 WORKDIR /app
 
@@ -21,14 +21,14 @@ RUN if [ -z "$proxy" ]; then \
         pnpm i --registry=https://registry.npmmirror.com; \
     fi
 
-# --------- builder -----------
+# --------- 构建阶段 -----------
 FROM node:20.14.0-alpine AS builder
 WORKDIR /app
 
 ARG proxy
 ARG base_url
 
-# copy common node_modules and one project node_modules
+# 复制主 node_modules 和项目 node_modules
 COPY package.json pnpm-workspace.yaml .npmrc tsconfig.json ./
 COPY --from=maindeps /app/node_modules ./node_modules
 COPY --from=maindeps /app/packages ./packages
@@ -43,14 +43,14 @@ ENV NODE_OPTIONS="--max-old-space-size=4096"
 ENV NEXT_PUBLIC_BASE_URL=$base_url
 RUN pnpm --filter=app build
 
-# --------- runner -----------
+# --------- 运行阶段 -----------
 FROM node:20.14.0-alpine AS runner
 WORKDIR /app
 
 ARG proxy
 ARG base_url
 
-# create user and use it
+# 创建用户并切换到该用户
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nextjs
 
@@ -58,30 +58,30 @@ RUN [ -z "$proxy" ] || sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /
 RUN apk add --no-cache curl ca-certificates \
   && update-ca-certificates
 
-# copy running files
+# 复制运行所需文件
 COPY --from=builder /app/projects/app/public /app/projects/app/public
 COPY --from=builder /app/projects/app/next.config.js /app/projects/app/next.config.js
 COPY --from=builder --chown=nextjs:nodejs /app/projects/app/.next/standalone /app/
 COPY --from=builder --chown=nextjs:nodejs /app/projects/app/.next/static /app/projects/app/.next/static
-# copy server chunks
+# 复制服务端 chunk 文件
 COPY --from=builder --chown=nextjs:nodejs /app/projects/app/.next/server/chunks /app/projects/app/.next/server/chunks
 # copy worker
 COPY --from=builder --chown=nextjs:nodejs /app/projects/app/.next/server/worker /app/projects/app/.next/server/worker
 
-# copy standload packages
+# 复制独立依赖包
 COPY --from=maindeps /app/node_modules/tiktoken ./node_modules/tiktoken
 RUN rm -rf ./node_modules/tiktoken/encoders
 COPY --from=maindeps /app/node_modules/@zilliz/milvus2-sdk-node ./node_modules/@zilliz/milvus2-sdk-node
 
 
-# copy package.json to version file
+# copy package.json 作为版本文件
 COPY --from=builder /app/projects/app/package.json ./package.json 
 
-# copy config
+# 复制配置文件
 COPY ./projects/app/data /app/data
 RUN chown -R nextjs:nodejs /app/data
 
-# Add tmp directory permission control
+# 添加 tmp 目录权限控制
 
 ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1

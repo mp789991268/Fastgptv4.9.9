@@ -79,9 +79,8 @@ export const useInitApp = () => {
     // log fastgpt
     if (!isPlus) {
       console.log(
-        '%cWelcome to FastGPT',
-        'font-family:Arial; color:#3370ff ; font-size:18px; font-weight:bold;',
-        `GitHub：https://github.com/labring/FastGPT`
+        '%cWelcome to ZtiGPT',
+        'font-family:Arial; color:#3370ff ; font-size:18px; font-weight:bold;'
       );
     }
 

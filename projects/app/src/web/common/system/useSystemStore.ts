@@ -105,9 +105,10 @@ export const useSystemStore = create<State>()(
 
         gitStar: 20000,
         async loadGitStar() {
+          return;
           if (!get().feConfigs?.show_git) return;
           try {
-            const { data: git } = await axios.get('https://api.github.com/repos/labring/FastGPT');
+            const { data: git } = await axios.get('https://8.134.168.50:3000/ZtiGPT');
 
             set((state) => {
               state.gitStar = git.stargazers_count;

@@ -41,7 +41,6 @@ const Empty = ({
           <Box whiteSpace={'pre-line'}>{intro}</Box>
         </Card>
       )}
-
       {showChatProblem && (
         <>
           {/* version intro */}

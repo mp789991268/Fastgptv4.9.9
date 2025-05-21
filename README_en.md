@@ -18,8 +18,8 @@ FastGPT is a knowledge-based platform built on the LLMs, offers a comprehensive 
 [![GitHub pull request](https://img.shields.io/badge/PRs-welcome-fffff?style=flat-square&labelColor=d4eaf7&color=7d09f1)](https://github.com/labring/FastGPT/pulls)
 [![GitHub last commit](https://img.shields.io/github/last-commit/labring/FastGPT?style=flat-square&labelColor=d4eaf7&color=7d09f1)](https://github.com/labring/FastGPT/pulls)
 [![License](https://img.shields.io/badge/License-Apache--2.0-ffffff?style=flat-square&labelColor=d4eaf7&color=7d09f1)](https://github.com/labring/FastGPT/blob/main/LICENSE)
-[![Documentation](https://img.shields.io/badge/Documentation-7d09f1?style=flat-square)](https://doc.tryfastgpt.ai/docs/intro)
-[![Local Development](https://img.shields.io/badge/Local_Development-%23d4eaf7?style=flat-square&logo=xcode&logoColor=7d09f1)](https://doc.tryfastgpt.ai/docs/intro)
+[![Documentation](https://img.shields.io/badge/Documentation-7d09f1?style=flat-square)](https://8.134.168.50:3000/docs/intro)
+[![Local Development](https://img.shields.io/badge/Local_Development-%23d4eaf7?style=flat-square&logo=xcode&logoColor=7d09f1)](https://8.134.168.50:3000/docs/intro)
 [![Explore our platform](https://img.shields.io/badge/Explore_our_platform-d4eaf7?style=flat-square&logo=spoj&logoColor=7d09f1)](https://tryfastgpt.ai/)
 
 [![discord](https://theme.zdassets.com/theme_assets/678183/cc59daa07820943e943c2fc283b9079d7003ff76.svg)](https://discord.gg/mp68xkZn2Q)&nbsp;&nbsp;&nbsp;&nbsp; 
@@ -74,13 +74,13 @@ Project tech stack: NextJs + TS + ChakraUI + MongoDB + PostgreSQL (PG Vector plu
 
   Give it a 2-4 minute wait after deployment as it sets up the database. Initially, it might be a too slow since we're using the basic settings.
 
-  [sealos one click deployment tutorial](https://doc.tryfastgpt.ai/docs/development/sealos/)
+  [sealos one click deployment tutorial](https://8.134.168.50:3000/docs/development/sealos/)
 
-- [Getting Started with Local Development](https://doc.tryfastgpt.ai/docs/development)
-- [Deploying FastGPT](https://doc.tryfastgpt.ai/docs/installation)
-- [Guide on System Configs](https://doc.tryfastgpt.ai/docs/installation/reference)
-- [Configuring Multiple Models](https://doc.tryfastgpt.ai/docs/installation/reference/models)
-- [Version Updates & Upgrades](https://doc.tryfastgpt.ai/docs/installation/upgrading)
+- [Getting Started with Local Development](https://8.134.168.50:3000/docs/development)
+- [Deploying FastGPT](https://8.134.168.50:3000/docs/installation)
+- [Guide on System Configs](https://8.134.168.50:3000/docs/installation/reference)
+- [Configuring Multiple Models](https://8.134.168.50:3000/docs/installation/reference/models)
+- [Version Updates & Upgrades](https://8.134.168.50:3000/docs/installation/upgrading)
 
 <a href="#FastGPT">
     <img src="https://img.shields.io/badge/-Back_to_Top-7d09f1.svg" alt="#" align="right">
@@ -185,7 +185,7 @@ This repository complies with the [FastGPT Open Source License](./LICENSE) open 
 1. Direct commercial use as a backend service is allowed, but provision of SaaS services is not allowed.
 2. Without commercial authorization, any form of commercial service must retain relevant copyright information.
 3. For full details, please see [FastGPT Open Source License](./LICENSE)
-4. Contact: Dennis@sealos.io , [click to view commercial version pricing strategy](https://doc.tryfastgpt.ai/docs/commercial)
+4. Contact: Dennis@sealos.io , [click to view commercial version pricing strategy](https://8.134.168.50:3000/docs/commercial)
 
 <a href="#FastGPT">
     <img src="https://img.shields.io/badge/-Back_to_Top-7d09f1.svg" alt="#" align="right">

@@ -1,4 +1,4 @@
-baseURL = "https://doc.tryfastgpt.ai"
+baseURL = "https://8.134.168.50:3000"
 languageCode = "en-GB"
 contentDir = "content"
 enableEmoji = true

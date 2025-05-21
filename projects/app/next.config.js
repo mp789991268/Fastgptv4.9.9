@@ -85,7 +85,7 @@ const nextConfig = {
       'pg',
       'bullmq',
       '@zilliz/milvus2-sdk-node',
-      "tiktoken",
+      'tiktoken'
     ],
     outputFileTracingRoot: path.join(__dirname, '../../'),
     instrumentationHook: true

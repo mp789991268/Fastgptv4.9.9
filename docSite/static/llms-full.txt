@@ -3111,7 +3111,7 @@ deepseek 系列：
 
 ## 2. 部署最新版 FastGPT 到本地环境
 {{% alert context="warning" %}}
-请使用 v4.8.22 以上版本，部署参考: https://doc.tryfastgpt.ai/docs/development/intro/
+请使用 v4.8.22 以上版本，部署参考: https://8.134.168.50:3000/docs/development/intro/
 {{% /alert %}}
 
 ## 3. 模型配置（下面两种方式二选其一）
@@ -5411,7 +5411,7 @@ curl --location --request POST 'http://localhost:3000/api/core/dataset/collectio
 --header 'Authorization: Bearer {{authorization}}' \
 --header 'Content-Type: application/json' \
 --data-raw '{
-    "link":"https://doc.tryfastgpt.ai/docs/course/quick-start/",
+    "link":"https://8.134.168.50:3000/docs/course/quick-start/",
     "datasetId":"6593e137231a2be9c5603ba7",
     "parentId": null,
 
@@ -5765,7 +5765,7 @@ curl --location --request POST 'http://localhost:3000/api/core/dataset/collectio
                 "tmbId": "65422be6aa44b7da77729ec9",
                 "type": "link",
                 "name": "快速上手 | FastGPT",
-                "rawLink": "https://doc.tryfastgpt.ai/docs/course/quick-start/",
+                "rawLink": "https://8.134.168.50:3000/docs/course/quick-start/",
                 "updateTime": "2024-01-20T13:54:53.031Z",
                 "dataAmount": 3,
                 "trainingAmount": 0,
@@ -7201,7 +7201,7 @@ FastGPT 商业版共包含了2个应用（fastgpt, fastgpt-plus）和2个数据�
 
 ### 如何更新/升级 FastGPT
 
-[升级脚本文档](https://doc.tryfastgpt.ai/docs/development/upgrading/)先看下文档，看下需要升级哪个版本。注意，不要跨版本升级！！！！！
+[升级脚本文档](https://8.134.168.50:3000/docs/development/upgrading/)先看下文档，看下需要升级哪个版本。注意，不要跨版本升级！！！！！
 
 例如，目前是4.5 版本，要升级到4.5.1，就先把镜像版本改成v4.5.1，执行一下升级脚本，等待完成后再继续升级。如果目标版本不需要执行初始化，则可以跳过。
 
@@ -7236,7 +7236,7 @@ FastGPT 商业版共包含了2个应用（fastgpt, fastgpt-plus）和2个数据�
 
 ![](/imgs/onsealos5.png)
 
-[配置文件参考](https://doc.tryfastgpt.ai/docs/development/configuration/)
+[配置文件参考](https://8.134.168.50:3000/docs/development/configuration/)
 
 ### 修改站点名称以及 favicon
 修改应用的环境变量，增加
@@ -13577,7 +13577,7 @@ Web 站点同步利用爬虫的技术，可以通过一个入口网站，自动�
 Tips: 国内的媒体站点基本不可用，公众号、csdn、知乎等。可以通过终端发送`curl`请求检测是否为静态站点，例如：
 
 ```bash
-curl https://doc.tryfastgpt.ai/docs/intro/
+curl https://8.134.168.50:3000/docs/intro/
 ```
 
 ## 如何使用

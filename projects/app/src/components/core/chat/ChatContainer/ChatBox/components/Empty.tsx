@@ -11,7 +11,6 @@ const Empty = () => {
 
   return (
     <Box pt={6} w={'85%'} maxW={'600px'} m={'auto'} alignItems={'center'} justifyContent={'center'}>
-      {/* version intro */}
       <Card p={4} mb={10} minH={'200px'}>
         <Markdown source={versionIntro} />
       </Card>
